@@ -1,6 +1,6 @@
 import { radioPlayerInit } from './radioPLayer.js';
-import {  } from './videoPlayer.js';
-import {  } from './musicPlayer.js';
+import { videoPlayerInit } from './videoPlayer.js';
+import { musicPlayerInit } from './musicPlayer.js';
 
 const playerBtn = document.querySelectorAll('.player-btn');
 const playerBlock = document.querySelectorAll('.player-block');
@@ -18,4 +18,6 @@ playerBtn.forEach((btn, i) => btn.addEventListener('click', () => {
   playerBlock[i].classList.add('active');
 }));
 
+videoPlayerInit();
 radioPlayerInit();
+musicPlayerInit();
